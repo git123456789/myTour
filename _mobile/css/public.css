@@ -203,4 +203,4 @@ body{background:#F0F2F5;}
 #line-qrcode{position:absolute;background:#ffffff;color:#333333;background-repeat:no-repeat;display:block;width:125px;height:148px;border:1px solid #dcdcdc;text-align:center;background-position:0px 0px;top:0px;right:10px;}
 #qrcode{padding-top:6px;}
 /*返回顶部*/
-.backtotop {display:none;width:50px;line-height:1.2em;padding:15px 10px;background:#ff3300;color: #fff;font-size:18px;font-weight:bold;text-align: center;position: fixed;_position: absolute;right: 10px;bottom:10px;_bottom: "auto";cursor: pointer;opacity: .7;filter: Alpha(opacity=70);border:1px solid #ff0000;}
+.backtotop {display:none;width:50px;line-height:1.2em;padding:15px 10px;background:#ff8800;color: #fff;font-size:18px;font-weight:bold;text-align: center;position: fixed;_position: absolute;right: 10px;bottom:10px;_bottom: "auto";cursor: pointer;opacity: .7;filter: Alpha(opacity=70);border:1px solid #ff0000;}

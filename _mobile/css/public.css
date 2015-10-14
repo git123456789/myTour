@@ -72,7 +72,7 @@ body{background:#F0F2F5;}
 .new-logo-box{margin:0 auto;width:1200px;overflow:hidden;*zoom:1;clear:both;}
 .logo{width:330px;float:left;overflow:hidden;*zoom:1;}
 .travel_tel{width:140px;float:right;overflow:hidden;*zoom:1;background:url(../images/24hour.png) no-repeat 1px 15px;color:#ff3300;font-size:18px;font-weight:bold;padding:10px 0 0 70px;}
-.form_content{display:block;float:left;width:440px;margin-top:25px;margin-left:10px;}
+.form_content{display:block;float:left;width:440px;margin-top:20px;margin-left:10px;}
 .searchselect{display:block;float:left;height:31px;line-height:31px;padding:3px 5px 0px 2px;border:2px solid #FF8800;border-right:0;}
 .searchselect .noborderselect{border:0px;box-shadow:0px 0px 0px #ffffff inset;}
 .search_input{display:block;float:left;width:275px;height:34px;line-height:34px;background:#ffffff;color:#999999;padding-left:10px;border:2px solid #FF8800;border-right:0;border-left:0;}

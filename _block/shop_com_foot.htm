@@ -29,5 +29,7 @@ document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3
     $(window).bind("scroll", $backToTopFun);
     $(function() { $backToTopFun(); });
 })();
+function searchFocus(obj) {if(obj.value == '请输入关键字') {obj.value = '';}}
+function searchBlur(obj) {if(obj.value == '' ) {obj.value = '请输入关键字';}}
 </script>
 </p>

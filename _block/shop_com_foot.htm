@@ -31,5 +31,16 @@ document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3
 })();
 function searchFocus(obj) {if(obj.value == '请输入关键字') {obj.value = '';}}
 function searchBlur(obj) {if(obj.value == '' ) {obj.value = '请输入关键字';}}
+function checkpost()
+{
+   if(myform.name.value==""){alert("请输入姓名！");
+    myform.name.focus();
+    return false;
+   }
+   if(myform.tel.value.length==""){alert("请输入联系方式！");
+    myform.tel.focus();
+    return false;
+   }
+}
 </script>
 </p>

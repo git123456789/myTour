@@ -265,21 +265,12 @@
 				{dede:likearticle row="20" channelid="31" titlelen="50" addfields='trueprice'  type='image.' imgwidth='100' imgheight='90' infolen='60'}
                   <li>
 				  <a href="[field:arcurl/]" target="_blank">[field:image/]</a><p><a href="[field:arcurl/]"  target="_blank">[field:title/]</a></p>
-				  <p class="bh001">[ 编号:[field:id /] ]    <span>￥[field:id runphp='yes'] $aid = @me; $row = $GLOBALS['dsql']->GetOne("Select trueprice From `dede_addonshop21282933` where aid='$aid' ");@me = cn_substr(strip_tags("{$row['trueprice']}"),600);[/field:id] 元起<span></span></span></p>
+				  <p class="bh001">[ 编号:[field:id /] ]    <span>￥[field:id runphp='yes'] $aid = @me; $row = $GLOBALS['dsql']->GetOne("Select trueprice From `dede_addonshop21282931` where aid='$aid' ");@me = cn_substr(strip_tags("{$row['trueprice']}"),600);[/field:id] 元起<span></span></span></p>
 				  </li>
 				  {/dede:likearticle}
 			 </ul>
 		 </div>
-
-
-		<div class="linepagebody-right-box">
-		 <h3>咨询和预订电话</h3>
-		<ul class="tourlink">
-<li class="telse">029-86699655或029-86699611</li>
- <li class="telse">(7*24小时在线预订！！！)</li></ul>
-		 </div>
-		
-	
+		{dede:include filename="_block/shop_com_notice.htm"/}
 	</div>
 </div>
 <!--</linepagebody>-->

@@ -260,12 +260,12 @@
 
 		
 <div class="linepagebody-right-box">
-		 <h3 class="ioc-h">西安旅游相关线路</h3>
+		 <h3 class="ioc-h">周边旅游相关线路</h3>
 		<ul class="tourlinkimg">
 				{dede:likearticle row="20" channelid="32" titlelen="50" addfields='trueprice'  type='image.' imgwidth='100' imgheight='90' infolen='60'}
                   <li>
 				  <a href="[field:arcurl/]" target="_blank">[field:image/]</a><p><a href="[field:arcurl/]"  target="_blank">[field:title/]</a></p>
-				  <p class="bh001">[ 编号:[field:id /] ]    <span>￥[field:id runphp='yes'] $aid = @me; $row = $GLOBALS['dsql']->GetOne("Select trueprice From `dede_addonshop21282933` where aid='$aid' ");@me = cn_substr(strip_tags("{$row['trueprice']}"),600);[/field:id] 元起<span></span></span></p>
+				  <p class="bh001">[ 编号:[field:id /] ]    <span>￥[field:id runphp='yes'] $aid = @me; $row = $GLOBALS['dsql']->GetOne("Select trueprice From `dede_addonshop21282932` where aid='$aid' ");@me = cn_substr(strip_tags("{$row['trueprice']}"),600);[/field:id] 元起<span></span></span></p>
 				  </li>
 				  {/dede:likearticle}
 			 </ul>

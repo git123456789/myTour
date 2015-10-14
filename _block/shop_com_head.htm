@@ -2,7 +2,21 @@
 <div id="new-logo">
 	<div class="new-logo-box">
 		<div class="logo"><img src="http://www.alongtour.com/templets/default/_mobile/images/new_logo.jpg" /></div>
-		<div class="search"></div>
+		<div class="form_content">
+		<form action="/plus/advancedsearch.php" method="post">
+		<div class="searchselect"><select name="mid" class="input_select noborderselect">
+			<option selected="selected" value="29">国内</option>
+            <option value="32">周边</option>
+            <option value="31">出境</option>
+            <option value="33">西安</option>
+            <option value="22">攻略</option>
+            <option value="30">签证</option>
+		</select><input value="search" type="hidden" name="dopost" />
+		</div>
+		<input class="search_input" name="q" id="q" type="text"  autocomplete="off" value="请输入关键字" onfocus="searchFocus(this);" onblur="searchBlur(this);"  />
+		<button class="search_submit" type='submit'><span>线路搜索</span></button>
+		</form>
+		</div>
 		<div class="travel_tel">{dede:global.cfg_telsa/}<br/>{dede:global.cfg_telsb/}</div>
 	</div>
 </div>

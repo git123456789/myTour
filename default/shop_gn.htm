@@ -209,7 +209,7 @@
 
 							 
 							 
-							 {dede:sql sql="select * from dede_diyform2 order by id desc limit 0,15" } 
+							 {dede:sql sql="select * from dede_diyform2 order by id desc limit 0,30" } 
          <div class="pleased">
          <div class="pleasedimg"><span>旅游满意度</span><br/><span class="blod2" style="font-size:23px;">[field:kehumayidu /]</span></div>
          <span class="nameb" style="color:#333">[field:kehename /]</span><p><span> 住宿:[field:kehuzhusu/]</span> <span> 交通:[field:kehujiaotong/]</span> <span> 行程:[field:kehuxingcheng/]</span> <span> 导游:[field:kehudaoyou/]</span></p>
@@ -260,26 +260,17 @@
 
 		
 <div class="linepagebody-right-box">
-		 <h3 class="ioc-h">西安旅游相关线路</h3>
+		 <h3 class="ioc-h">国内旅游相关线路</h3>
 		<ul class="tourlinkimg">
 				{dede:likearticle row="20" channelid="29" titlelen="50" addfields='trueprice'  type='image.' imgwidth='100' imgheight='90' infolen='60'}
                   <li>
 				  <a href="[field:arcurl/]" target="_blank">[field:image/]</a><p><a href="[field:arcurl/]"  target="_blank">[field:title/]</a></p>
-				  <p class="bh001">[ 编号:[field:id /] ]    <span>￥[field:id runphp='yes'] $aid = @me; $row = $GLOBALS['dsql']->GetOne("Select trueprice From `dede_addonshop21282933` where aid='$aid' ");@me = cn_substr(strip_tags("{$row['trueprice']}"),600);[/field:id] 元起<span></span></span></p>
+				  <p class="bh001">[ 编号:[field:id /] ]    <span>￥[field:id runphp='yes'] $aid = @me; $row = $GLOBALS['dsql']->GetOne("Select trueprice From `dede_addonshop212829` where aid='$aid' ");@me = cn_substr(strip_tags("{$row['trueprice']}"),600);[/field:id] 元起<span></span></span></p>
 				  </li>
 				  {/dede:likearticle}
 			 </ul>
 		 </div>
-
-
-		<div class="linepagebody-right-box">
-		 <h3>咨询和预订电话</h3>
-		<ul class="tourlink">
-<li class="telse">029-86699655或029-86699611</li>
- <li class="telse">(7*24小时在线预订！！！)</li></ul>
-		 </div>
-		
-	
+		{dede:include filename="_block/shop_com_notice.htm"/}
 	</div>
 </div>
 <!--</linepagebody>-->
@@ -298,19 +289,6 @@
 <div id="footer">
 	<div id="footer-info">
 	 {dede:include filename="_block/shop_com_foot.htm"/}
-<script language="JavaScript">
-function checkpost()
-{
-   if(myform.name.value==""){alert("请输入姓名！");
-    myform.name.focus();
-    return false;
-   }
-   if(myform.tel.value.length==""){alert("请输入联系方式！");
-    myform.tel.focus();
-    return false;
-   }
-}
-</script>
 	</div>
 </div>
 <!--</footer>-->

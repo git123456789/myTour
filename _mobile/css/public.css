@@ -1,0 +1,201 @@
+@charset "utf-8";
+/**css格式化*********************************************************************************************************************************************************/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,a,address,em,img,q,s,small,strong,b,u,i,dl,dt,dd,ol,ul,li,form,label{margin:0;padding:0;border:0; outline:0; vertical-align:baseline; background:transparent;}
+body{font-size:12px;font-family:Microsoft YaHei,Tahoma,arial,"宋体",sans-serif}
+input,label,select,option,textarea,button,fieldset,legend {margin:0;padding:0;border:0;font-size:12px;}
+h1,h2,h3,h4,h5,h6{overflow:hidden;*zoom:1;_zoom:1;font-size:14px;color:#555555;}
+strong{font-weight:normal;}
+ul,dl,ol{_display:inline-block;/*ie6 */_margin /* IE5.5 */:0px;overflow:hidden;zoom:1;/*IE*/}
+ul:after {content:".";display:block;clear:both;overflow:hidden;visibility:hidden;height:0;font-size:0;line-height:0;}
+ul,ol,li,dd,dt{list-style:none;list-style-type:none;}
+li,dd,dt{list-style-type:none;}
+table,td,input,select{font-size:12px;}
+img,input,label{vertical-align:text-bottom;}
+table{border-collapse:collapse;border-spacing:0;}
+/* default link color */
+a,button{outline-style:none;color:#333;text-decoration:none;cursor:pointer;}
+a:hover{color:#cc3333;text-decoration:none;}
+/* clear line*/
+.left{float:left;}
+.right{float:right;}
+.in{display:inline;}
+.clear{clear:both;font-size:0px;width:1px;height:0px;visibility:hidden;margin-top:0px!important;*margin-top:-1px;line-height:0px;overflow:hidden;zoom:1;*zoom:1;_zoom:1;}
+.fix{*zoom:1;}
+.fix{_zoom:1;}
+.fix:after,.fix:before{content:".";display:block;clear:both;overflow:hidden;visibility:hidden;height:0;font-size:0;line-height:0;}
+div{*zoom:1;}
+div{_zoom:1;}
+.minheight{min-height:500px;height:auto !important;height:500px;}
+/*表单格式化 start*/
+input::-moz-focus-inner{border:0;padding:0;}/*针对Firefox*/
+.input_txt,.input_but,.input_select,.input_textarea,.alltotal,.mintotal{display:inline-block;}/*让ie6支持inline-block必须分开写在两个css里面*/
+/*圆角 字体 背景 文字颜色*/
+.input_txt,.input_but_price,.input_select,.input_textarea,.alltotal,.mintotal,.data_but_price_r,.data_but_price_l{_zoom:1;*display:inline;overflow:visible;/*设置这个属性IE6/7下padding才会生效*//*让ie6支持inline-block必须分开写在两个css里面*/text-transform:lowercasecase;background:#ffffff;color:#666666;font-family:Tahoma,arial,"宋体",sans-serif;vertical-align:middle;}
+/*button*/
+.form-submit{vertical-align:middle;border:1px solid #ff6600;background:#ff8800;color:#fff;font:bold 14px Tahoma,arial,sans-serif;padding:0.1em 0.85em;text-transform:uppercase;line-height:2em;margin:0;overflow:visible;width:auto;*width:1;cursor:pointer;}
+.form-submit:hover{background:#FF7800;border:1px solid #ff8800;color:#ffffff;}
+/*button2*/
+.form-submitb{vertical-align:middle;-webkit-border-radius:2px;border-radius:2px;border:1px solid #eaeaea;background:#f9f9f9;color:#666666;font:bold 14px Tahoma,arial,sans-serif;padding:0.1em 0.85em;text-transform:uppercase;line-height:2em;margin:0;overflow:visible;width:auto;*width:1;cursor:pointer;}
+.form-submitb:hover{background:#FF7800;border:1px solid #ff8800;color:#ffffff;}
+/*button3*/
+.form-submitc{vertical-align:middle;border:1px solid #eaeaea;background:#f9f9f9;color:#666666;font:normal 14px Tahoma,arial,sans-serif;padding:0.3em 0.5em;text-transform:uppercase;line-height:1em;margin:0;overflow:visible;width:auto;*width:1;cursor:pointer;}
+.form-submitc:hover{background:#FF7800;border:1px solid #ff8800;color:#ffffff;}
+/*button4*/
+.form-submitd{vertical-align:middle;border:1px solid #eaeaea;background:#f9f9f9;color:#666666;font:normal 14px Tahoma,arial,sans-serif;padding:0.4em 0.5em;text-transform:uppercase;line-height:1em;margin:0;overflow:visible;width:auto;*width:1;cursor:pointer;}
+.form-submitd:hover{background:#FF7800;border:1px solid #ff8800;color:#ffffff;}
+/*textarea*/
+.input_textarea{box-shadow:2px 2px 3px #EDEDED inset;border:1px solid #dcdcdc;/*inset|outset inset属性就有种凹陷的感觉,与outset属性正好相反*/line-height:2em;/*让文字居中显示*/min-width:545px; width:auto !important;width:545px;min-width:545px\0;_line-height:30px;height:100px;padding:5px 5px;}
+/*select*/
+.input_select{box-shadow:2px 2px 3px #EDEDED inset;text-align:left;border:1px solid #dcdcdc;/*inset|outset inset属性就有种凹陷的感觉,与outset属性正好相反*/padding:5px 5px;line-height:2em;/*让文字居中显示*/min-width:50px;width:auto !important; width:50px;min-width:50px\0;_line-height:15px;cursor:pointer;}
+/*input*/
+.input_txt{box-shadow:2px 2px 3px #EDEDED inset;border:1px solid #dcdcdc;/*inset|outset inset属性就有种凹陷的感觉,与outset属性正好相反*/padding:5px 5px;width:250px;line-height:24px;/*让文字居中显示*/height:20px;}
+/*鼠标滑过表单区域 表单边框颜色  备份 input[type=text]:focus,input[type=password]:focus,textarea[class=hack_xheditor]:focus{border:1px solid #4D90FE;} */
+.input_txt:hover,.input_select:hover,.input_textarea:hover{border:1px solid #4D90FE;}
+@-moz-document url-prefix(){input.input_but{padding:0 2px; min-width:60px;}}
+/*select 表单美化方法二*/
+.select-box{padding:5px 10px;width:156px;border:1px solid #ccc;background:#fff;}
+.select-wrap{width:156px;height:16px;line-height:16px;overflow:hidden;}
+.city{margin:-2px 0 0 -2px;width:150px;height:20px;font:normal 12px/20px Tahoma,Geneva,sans-serif;overflow:hidden;display:block;}
+@media screen and (-webkit-min-device-pixel-ratio:0){.city{line-height:16px;}} /*for safair*/
+.shadow {-moz-box-shadow: 3px 3px 4px #000;-webkit-box-shadow: 3px 3px 4px #000;box-shadow: 3px 3px 4px #000;/* For IE 8 */-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";/* For IE 5.5 - 7 */filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');}
+/**样式开始*********************************************************************************************************************************************************/
+body{background:#F0F2F5;}
+/*网站顶部*/
+#top-nav{margin:0 auto;width:1200px;overflow:hidden;*zoom:1;clear:both;}
+#top{background:#fafafa;border-bottom:1px solid #f1f1f1;color:#888888;}
+#top a{color:#888888;}
+#top a:hover{color:#ff3300;}
+#top-nav-left,#top-nav-right{height:30px;line-height:30px;width:600px;}
+#top-nav-left{float:right;text-align:right;font-weight:normal;color:#888888;font-size:12px;}
+#top-nav-right{float:left;}
+#new-logo{background:#ffffff;}
+.new-logo-box{margin:0 auto;width:1200px;overflow:hidden;*zoom:1;clear:both;}
+.logo{width:330px;float:left;overflow:hidden;*zoom:1;}
+.travel_tel{width:140px;float:right;overflow:hidden;*zoom:1;background:url(../images/24hour.png) no-repeat 1px 15px;color:#ff3300;font-size:18px;font-weight:bold;padding:10px 0 0 70px;}
+#nav{background:#37C249;height:40px;line-height:40px;}
+#nav-ul{margin:0 auto;width:1200px;overflow:hidden;*zoom:1;clear:both;font-size:14px;font-weight:bold;}
+#nav-ul li{display:block;float:left;text-align:center;}
+#nav-ul li.navone{background:#00a115;}
+#nav-ul li a{display:block;float:left;padding:0px 10px;color:#ffffff;}
+#nav-ul li a:hover{background:#00a115;}
+/*网站链接向导*/
+#guide{margin:0 auto;width:1200px;overflow:hidden;*zoom:1;clear:both;height:35px;line-height:35px;font-size:12px;color:#888888;}
+.guide-left{}
+.guide-right{}
+#guide a{color:#2B8F08;}
+#guide a.navhome{color:#4E9700;}
+#guide a:hover{color:#ff6600;}
+
+#linepagebody{margin:0 auto;width:1200px;overflow:hidden;*zoom:1;clear:both;color:#888888;}
+.linepagebody-left{display:block;float:left;width:970px;border:1px #dddddd solid;overflow:hidden;*zoom:1;background:#ffffff;}
+.linepagebody-left h1{color:#404040;font-size:22px;font-weight:normal;padding:15px 5px 0px 10px;}
+.linepagebody-right{display:block;float:right;width:210px;overflow:hidden;*zoom:1;}
+
+.linepagebody-right-box{background:#ffffff;border:1px #dddddd solid;margin-bottom:10px;}
+.linepagebody-right-box h3{font: 400 16px/40px "Microsoft YaHei";padding-left:10px;color:#888888;font-weight:bold;}
+.linepagebody-right-box h3.ioc-h{padding-left:35px;background:url(../images/line_title_h3.png) no-repeat 5px 5px;}
+.linepagebody-right-box h3.ioc-hf{padding-left:35px;background:url(../images/hot.gif) no-repeat 2px 0px;}
+
+.linepagebody-right-box h4{font: 400 14px/30px "Microsoft YaHei";padding-left:10px;color:#888888;font-weight:bold;}
+
+.tourlink{display:block;overflow:hidden;*zoom:1;clear:both;padding:5px;}
+.tourlink li{display:block;float:left;padding:5px;}
+.tourlink li a{color:#888888;}
+.tourlink li a.morea{color:#2B8F08;}
+.tourlink li a:hover{color:#ff3300;}
+.tourlink li.telse{font-size:14px;color:#333333;font-weight:bold;}
+.lineinfo{height:25px;line-height:25px;background:url(../images/jzc_img.gif) no-repeat 878px 0px;padding:0px 5px 5px 10px;}
+.lineinfo span.numberline{color:#ff8800;}
+.lineinfo a{color:#2B8F08;}
+.lineinfo a:hover{color:#ff6600;}
+.lineinfo a.xvzhi-a{color:#2E2EFE;}
+
+.line-body{overflow:hidden;*zoom:1;clear:both;}
+.line-body-left{width:480px;float:left;padding:0px 0px 5px 10px;background:#ffffff;}
+.gallery {width:480px;}
+.gallery img {display: block;}
+.main-image img {width:480px;height:300px;}
+.thumbnails {height:53px;margin-top:10px;}
+.thumbnails li {float:left;margin-right:5px; display: inline;}
+.thumbnails img {width:91px;padding:0px;}
+
+.line-body-right{width:470px;float:right;overflow:hidden;*zoom:1;}
+.line-body-right .lineprice{position:relative;line-height:2em;font-size:14px;}
+.line-body-right .lineprice a{color:#2B8F08;}
+.line-body-right .lineprice a:hover{color:#ff6600;}
+.line-body-right .lineprice span.jg{font-size:25px;color:#ff3300;font-weight:bold;}
+.line-body-right .lineprice span.txa{color:#ff3300;}
+.line-body-right .lineprice span.txb{color:#333333;}
+.baoming-twm{}
+.baoming{padding:10px;background:#FFFBF4;color:#333333;border:2px solid #FFC267;margin-right:10px;line-height:1.8em;}
+.baoming .orderbut{margin-left:52px;}
+.baoming span.bmts{font-weight:bold;color:#ff3300;}
+.baoming span.bmtel{font-weight:bold;font-size:16px;color:#ff6600;}
+.baoming-from{padding:10px;line-height:2.8em;background:#ffffff;border:1px solid #f1f1f1;margin-bottom:5px;}
+/*线路区域*/
+#line-box{margin-top:20px;}
+#line-box .h3style{height:38px;line-height:38px;font-size:14px;font-weight:bold;color:#555555;background:#f9f9f9;padding-left:8px;cursor:pointer;border-bottom:1px solid #eaeaea;}
+#line-box .h3style span{display:block;float:right;color:#c5c5c5;font-weight:bold;font-size:18px;margin-right:5px;}
+#tour-info{overflow:hidden;*zoom:1;clear:both;}
+#tour-info-left{width:480px;float:left;overflow:hidden;*zoom:1;}
+#tour-info-right{width:460px;float:right;position:relative;overflow:hidden;*zoom:1;background:#f8f8f8;padding:10px;font-weight:normal;line-height:2.5em;}
+#tour-info-right a{color:#4E9700;}
+#tour-info-right a:hover{color:#4E9700;text-decoration:underline;}
+#tour-info-right .pricebox{background:#ffffff;padding:10px;border:1px solid #eaeaea;margin-top:10px;line-height:35px;}
+#tour-info-right .pricebox .table-td{border-bottom:1px dashed #dcdcdc;}
+#tour-info-right .pricebox table{width:99.9%;font-weight:normal;}
+#tour-info-right .pt-price{display:block;float:left;width:65px;text-align:left;}
+#tour-info-right .spanprice{color:#ff6600;}
+#tour-info-right .maxprice{font-size:24px;}
+#tour-info-right .youhuiprice{background:#ff6600;color:#ffffff;border:1px solid #ff6600;margin-right:10px;}
+#tour-info-right .youhuiprice_jf{color:#888888;background:url(../images/xjiao.gif) no-repeat bottom right #ffffff;padding-left:5px;padding-right:10px;}
+#tour-info-right .youhuiprice_jf a{color:#555555;}
+#tour-info-right .youhuiprice2{background:#2E9700;color:#ffffff;border:1px solid #2E9700;margin-right:5px;}
+#tour-info-right .youhuiprice_jf2{color:#ffffff;background:#2E9700;}
+#tour-info-right .youhuiprice_jf2 a{color:#ffffff;}
+
+#tour-info-right .alltotal{width:200px;line-height:40px;/*让文字居中显示*/height:40px;font-weight:bold;font-size:24px;color:#ff6600;}
+#tour-info-right .mintotal{width:110px;line-height:24px;/*让文字居中显示*/height:24px;font-weight:bold;font-size:12px;color:#ff6600;}
+.p-over{overflow:hidden;*zoom:1;clear:both;}
+.notice{overflow:hidden;*zoom:1;clear:both;line-height:1.5em;border:1px solid #FFCD7C;color:#404040;background:#FFFCE5;font-weight:normal;padding:10px;margin:10px 0;}
+.notice .notice-span{font-weight:bold;}
+/*行程详情 头部样式*/
+.pkg-detail-wrap{z-index:4;position:relative;display:block;}
+.pkg-detail-tab{position:absolute;width:970px;height:33px;background:#ffffff;border-bottom:3px solid #3AA400;}
+.pkg-detail-tab-bd{position:absolute;*left:0;_left:0;height:33px;font-size:14px;}
+.pkg-detail-tab-bd a{display:inline-block;width:100px;float:left;text-align:center;border-right:1px solid #ddd;font:400 14px/33px "微软雅黑", tahoma, "宋体";overflow:hidden;background:#37C249;color:#ffffff;}
+.pkg-detail-tab-bd a.current{background:#3AA400;color:#fff;}
+.pkg-detail-tab-bd a:hover{text-decoration:none;background:#EDFFDC;color:#390;}
+.pkg-detail-tab-bd a.current:hover{background:#3AA400;color:#fff;}
+.pkg-detail-tab-bd a {outline: none;}
+.pkg-detail-tab-bd a:active{star:expression(this.onFocus=this.blur());}
+/* 两个容器 */
+.pkg-detail-box{height:auto;border-top:none;border-top:0;overflow:hidden;}
+.pkg-detail-infor{height:auto;overflow:hidden;padding:0px 20px;}
+.pkg-detail-style{line-height:1.6em;padding:10px;color:#555555;}
+.pkg-no{padding:0px;}
+
+.tourlinkimg{overflow:hidden;*zoom:1; clear:both;line-height:24px;margin-bottom:10px;background:#ffffff;}
+.tourlinkimg li{padding:5px;text-align:center;font-weight:normal;color:#666666;}
+.tourlinkimg li a{color:#666666;}
+.tourlinkimg li a:hover{color:#ff6600;}
+.tourlinkimg li img{width:180px;}
+.tourlinkimg li p span{color:#ff8800;font-size:12px;font-weight:bold;}
+.tourlinkimg li p.bh001{color:#cacaca;}
+
+#zhutiyou{margin:0 auto;margin-top:20px;width:1200px;overflow:hidden;*zoom:1;clear:both;}
+
+#footer{background:#ffffff;color:#888888;text-align:center;line-height:2em;padding:25px 0px;}
+#footer-info{margin:0 auto;width:1200px;overflow:hidden;*zoom:1;clear:both;}
+
+.pleased{ border-bottom:#dcdcdc 1px dashed; height:100%; margin:10px 0px;}
+.pleased span{ color:#ff6600;}
+.pleasedimg{ width:78px; height:56px; float:left; clear:left; margin-right:12px;background:url(../images/pleased.gif) no-repeat; color:#fff; padding-left:4px;}
+.pleasedimg span{ font-size:12px;color:#fff;}
+.blod2{font-style:oblique;font-weight:bold; font-family:Georgia;}
+.nameb{ font-weight:bold;}
+/*二维码*/
+#line-qrcode{position:absolute;background:#ffffff;color:#333333;background-repeat:no-repeat;display:block;width:125px;height:148px;border:1px solid #dcdcdc;text-align:center;background-position:0px 0px;top:0px;right:10px;}
+#qrcode{padding-top:6px;}
+/*返回顶部*/
+.backtotop {display:none;width:50px;line-height:1.2em;padding:15px 10px;background:#ff3300;color: #fff;font-size:18px;font-weight:bold;text-align: center;position: fixed;_position: absolute;right: 10px;bottom:10px;_bottom: "auto";cursor: pointer;opacity: .7;filter: Alpha(opacity=70);border:1px solid #ff0000;}

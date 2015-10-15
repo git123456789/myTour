@@ -71,7 +71,7 @@ body{background:#F0F2F5;}
 #new-logo{background:#ffffff;}
 .new-logo-box{margin:0 auto;width:1200px;overflow:hidden;*zoom:1;clear:both;}
 .logo{width:330px;float:left;overflow:hidden;*zoom:1;}
-.travel_tel{width:140px;float:right;overflow:hidden;*zoom:1;background:url(../images/24hour.png) no-repeat 2px 16px;color:#ff8800;font-size:18px;font-weight:bold;padding:12px 0 0 70px;}
+.travel_tel{width:140px;float:right;overflow:hidden;*zoom:1;background:url(../images/24hour_hot.png) no-repeat 2px -229px;color:#ff8800;font-size:18px;font-weight:bold;padding:12px 0 0 70px;}
 .form_content{display:block;float:left;width:440px;margin-top:20px;margin-left:10px;}
 .searchselect{display:block;float:left;height:31px;line-height:31px;padding:3px 5px 0px 2px;border:2px solid #FF8800;border-right:0;}
 .searchselect .noborderselect{border:0px;box-shadow:0px 0px 0px #ffffff inset;}
@@ -98,8 +98,8 @@ body{background:#F0F2F5;}
 
 .linepagebody-right-box{background:#ffffff;border:1px #dddddd solid;margin-bottom:10px;}
 .linepagebody-right-box h3{font: 400 16px/40px "Microsoft YaHei";padding-left:10px;color:#888888;font-weight:bold;}
-.linepagebody-right-box h3.ioc-h{padding-left:35px;background:url(../images/line_title_h3.png) no-repeat 5px 5px;}
-.linepagebody-right-box h3.ioc-hf{padding-left:35px;background:url(../images/hot.gif) no-repeat 2px 0px;}
+.linepagebody-right-box h3.ioc-h{padding-left:35px;background:url(../images/24hour_hot.png) no-repeat 2px 0px;}
+.linepagebody-right-box h3.ioc-hf{padding-left:35px;background:url(../images/24hour_hot.png) no-repeat 2px -121px;}
 
 .linepagebody-right-box h4{font: 400 14px/30px "Microsoft YaHei";padding-left:10px;color:#888888;font-weight:bold;}
 
@@ -153,7 +153,7 @@ body{background:#F0F2F5;}
 #tour-info-right .spanprice{color:#ff6600;}
 #tour-info-right .maxprice{font-size:24px;}
 #tour-info-right .youhuiprice{background:#ff6600;color:#ffffff;border:1px solid #ff6600;margin-right:10px;}
-#tour-info-right .youhuiprice_jf{color:#888888;background:url(../images/xjiao.gif) no-repeat bottom right #ffffff;padding-left:5px;padding-right:10px;}
+#tour-info-right .youhuiprice_jf{color:#888888;background: no-repeat bottom right #ffffff;padding-left:5px;padding-right:10px;}
 #tour-info-right .youhuiprice_jf a{color:#555555;}
 #tour-info-right .youhuiprice2{background:#2E9700;color:#ffffff;border:1px solid #2E9700;margin-right:5px;}
 #tour-info-right .youhuiprice_jf2{color:#ffffff;background:#2E9700;}

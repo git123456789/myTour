@@ -78,11 +78,11 @@ body{background:#F0F2F5;}
 .search_input{display:block;float:left;width:275px;height:34px;line-height:34px;background:#ffffff;color:#999999;padding-left:10px;border:2px solid #FF8800;border-right:0;border-left:0;}
 .search_submit{display:block;float:left;width:80px;height:38px;line-height:38px;background:#FF8800;color:#ffffff;cursor:pointer;font-size:14px;font-weight:bold}
 #nav{background:#3AA400;height:40px;line-height:40px;}
-#nav-ul{margin:0 auto;width:1200px;overflow:hidden;*zoom:1;clear:both;font-size:14px;font-weight:bold;}
+#nav-ul{margin:0 auto;width:1200px;overflow:hidden;*zoom:1;clear:both;font-size:16px;}
 #nav-ul li{display:block;float:left;text-align:center;}
-#nav-ul li.navone{background:#00a115;}
-#nav-ul li a{display:block;float:left;padding:0px 10px;color:#ffffff;}
-#nav-ul li a:hover{background:#00a115;}
+#nav-ul li.navone{background:#308900;}
+#nav-ul li a{display:block;float:left;padding:0px 14px;color:#ffffff;}
+#nav-ul li a:hover{background:#308900;}
 /*网站链接向导*/
 #guide{margin:0 auto;width:1200px;overflow:hidden;*zoom:1;clear:both;height:35px;line-height:35px;font-size:12px;color:#888888;}
 .guide-left{}

@@ -77,7 +77,7 @@ body{background:#F0F2F5;}
 .searchselect .noborderselect{border:0px;box-shadow:0px 0px 0px #ffffff inset;}
 .search_input{display:block;float:left;width:275px;height:34px;line-height:34px;background:#ffffff;color:#999999;padding-left:10px;border:2px solid #FF8800;border-right:0;border-left:0;}
 .search_submit{display:block;float:left;width:80px;height:38px;line-height:38px;background:#FF8800;color:#ffffff;cursor:pointer;font-size:14px;font-weight:bold}
-#nav{background:#37C249;height:40px;line-height:40px;}
+#nav{background:#3AA400;height:40px;line-height:40px;}
 #nav-ul{margin:0 auto;width:1200px;overflow:hidden;*zoom:1;clear:both;font-size:14px;font-weight:bold;}
 #nav-ul li{display:block;float:left;text-align:center;}
 #nav-ul li.navone{background:#00a115;}
